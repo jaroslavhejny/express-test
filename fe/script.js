@@ -6,7 +6,7 @@ const response = document.getElementById('response')
 const getNumber = () => {
     const value = input.value;
     console.log(value);
-    fetch(`http://localhost:1208/${value}`)
+    fetch(`https://test-q35r.onrender.com/${value}`)
     .then((res) => {
         res.json().then((result)=>{
             response.innerHTML = result.number
